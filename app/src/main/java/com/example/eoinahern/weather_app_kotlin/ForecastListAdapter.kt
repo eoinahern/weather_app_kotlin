@@ -24,4 +24,6 @@ class ForecastListAdapter(val items : List<String>) : RecyclerView.Adapter<Forec
 
     class ViewHolder(val textview: TextView) : RecyclerView.ViewHolder(textview)
 
+
+
 }
