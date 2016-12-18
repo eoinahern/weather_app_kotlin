@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         forecastlist.layoutManager = LinearLayoutManager(this)
 
 
-        
+
         toast(message = "go fork yoself", length = Toast.LENGTH_LONG)
     }
 
