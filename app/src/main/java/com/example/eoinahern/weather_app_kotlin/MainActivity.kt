@@ -2,6 +2,8 @@ package com.example.eoinahern.weather_app_kotlin
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -11,7 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        message.text = "hello boi!!!"
+        val forecastlist = findViewById(R.id.forecast_list) as RecyclerView
+        forecastlist.layoutManager = LinearLayoutManager(this)
+
+
+        
         toast(message = "go fork yoself", length = Toast.LENGTH_LONG)
     }
 
